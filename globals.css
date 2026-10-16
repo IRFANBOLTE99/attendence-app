@@ -1,0 +1,140 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: light;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  font-family: "Inter", "SF Pro Display", "SF Pro Text", "Segoe UI", sans-serif;
+}
+
+.aurora-bg {
+  background:
+    radial-gradient(circle at 8% 10%, rgba(106, 151, 255, 0.2), transparent 35%),
+    radial-gradient(circle at 88% 18%, rgba(116, 187, 255, 0.22), transparent 32%),
+    radial-gradient(circle at 50% 100%, rgba(210, 222, 255, 0.5), transparent 40%),
+    linear-gradient(180deg, #f8f9fb 0%, #f3f5f8 100%);
+}
+
+.theme-black.aurora-bg {
+  background:
+    radial-gradient(circle at 10% 8%, rgba(59, 130, 246, 0.2), transparent 30%),
+    radial-gradient(circle at 90% 15%, rgba(14, 165, 233, 0.15), transparent 30%),
+    linear-gradient(180deg, #050506 0%, #0b0b0c 60%, #111316 100%);
+}
+
+.apple-card {
+  border-radius: 1.5rem;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.75));
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  box-shadow:
+    0 22px 40px rgba(15, 23, 42, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+}
+
+.theme-black .apple-card {
+  background: linear-gradient(180deg, rgba(20, 20, 22, 0.86), rgba(14, 14, 16, 0.78));
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow:
+    0 20px 40px rgba(0, 0, 0, 0.45),
+    inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+
+.theme-panel {
+  background: rgba(255, 255, 255, 0.7);
+  border-color: rgba(148, 163, 184, 0.35);
+}
+
+.theme-black .theme-panel {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.input-apple {
+  width: 100%;
+  border-radius: 0.95rem;
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  background: rgba(255, 255, 255, 0.92);
+  padding: 0.7rem 0.9rem;
+  color: rgb(15 23 42);
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 160ms ease, box-shadow 160ms ease;
+}
+
+.theme-black .input-apple {
+  border-color: rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.06);
+  color: rgb(241 245 249);
+}
+
+.input-apple:focus {
+  border-color: rgba(15, 23, 42, 0.4);
+  box-shadow: 0 0 0 4px rgba(15, 23, 42, 0.08);
+}
+
+.theme-black .input-apple:focus {
+  border-color: rgba(148, 163, 184, 0.55);
+  box-shadow: 0 0 0 4px rgba(148, 163, 184, 0.16);
+}
+
+.btn-apple {
+  border: 1px solid rgba(15, 23, 42, 0.15);
+  background: linear-gradient(180deg, #191c22 0%, #11141a 100%);
+  color: white;
+  border-radius: 9999px;
+  padding: 0.72rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  transition: transform 150ms ease, opacity 150ms ease, box-shadow 150ms ease;
+  box-shadow: 0 10px 20px rgba(15, 23, 42, 0.16);
+}
+
+.theme-black .btn-apple {
+  border-color: rgba(255, 255, 255, 0.18);
+  background: linear-gradient(180deg, #f3f4f6 0%, #d1d5db 100%);
+  color: #07090c;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.35);
+}
+
+.btn-apple:hover {
+  opacity: 0.96;
+}
+
+.btn-apple:active {
+  transform: scale(0.99);
+}
+
+.theme-chip {
+  border-radius: 9999px;
+  border: 1px solid rgba(15, 23, 42, 0.15);
+  background: rgba(255, 255, 255, 0.7);
+  padding: 0.45rem 0.85rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.theme-black .theme-chip {
+  border-color: rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.05);
+  color: #e2e8f0;
+}
+
+.theme-chip-active {
+  background: #111827;
+  color: white;
+  border-color: #111827;
+}
+
+.theme-black .theme-chip-active {
+  background: #f8fafc;
+  color: #020617;
+  border-color: #f8fafc;
+}
